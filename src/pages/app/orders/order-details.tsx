@@ -80,7 +80,7 @@ export function OrderDetails({ orderId, open }: OrderDetailsProps) {
                   Realizado há
                 </TableCell>
                 <TableCell className="flex justify-end">
-                  {formatDistanceToNow(order.createdAt, {
+                  {formatDistanceToNow(new Date(order.createdAt), {
                     locale: ptBR,
                     addSuffix: true,
                   })}

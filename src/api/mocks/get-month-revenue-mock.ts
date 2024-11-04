@@ -9,6 +9,6 @@ export const getMonthRevenueMock = http.get<
 >('/metrics/month-receipt', () => {
   return HttpResponse.json({
     receipt: 20000,
-    diffFromLastMonth: 7,
+    diffFromLastMonth: 10,
   })
 })
